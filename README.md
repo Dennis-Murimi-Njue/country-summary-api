@@ -37,7 +37,7 @@ A small Python script that fetches live data about a country from the [REST Coun
 ## Usage
 
 ```
-python day1_api.py
+python trial_api.py
 ```
 
 Type a country name when prompted, for example `Kenya`.
@@ -45,7 +45,16 @@ Type a country name when prompted, for example `Kenya`.
 ## Example output
 
 ```
-(paste your own output here)
+========================================
+  COUNTRY SUMMARY: KENYA
+========================================
+Capital:      Nairobi
+Region:       Africa
+Population:   54,227,015 people
+Area:         580,367 km²
+Currency:     Kenyan shilling (KES)
+Languages:    English, Swahili
+========================================
 ```
 
 ## How it works
@@ -55,8 +64,6 @@ Type a country name when prompted, for example `Kenya`.
 - Errors such as a missing key, a timeout or an unknown country produce a friendly message instead of a crash.
 
 ## Notes
-
-- The API search also matches capitals and codes, so the script only accepts results whose country name matches what you typed.
 - The free plan has a monthly request limit, so avoid running the script in a loop.
 
 ## Credits
